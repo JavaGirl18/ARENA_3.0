@@ -3,8 +3,8 @@
 # Install Miniconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b
-~/miniconda3/bin/conda init bash
-source ~/.bashrc
+export PATH="$HOME/miniconda3/bin:$PATH"
+source ~/miniconda3/etc/profile.d/conda.sh
 
 # Create arena-env
 conda create --name arena-env python=3.11 -y
